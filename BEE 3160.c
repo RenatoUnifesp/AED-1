@@ -15,8 +15,9 @@ int main() {
     int num_newFriendList = 0;
     int index;
 
-    scanf("%[^\n]", luiggyFriendText);
-    scanf("%[^\n]", newFriendText);
+    fgets(luiggyFriendText, MAX_TEXT_LENGTH, stdin);
+    
+    fgets(newFriendText, MAX_TEXT_LENGTH, stdin);
 
     char *token = strtok(luiggyFriendText, " ");
     while (token != NULL) {
